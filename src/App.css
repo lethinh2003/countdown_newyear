@@ -5,6 +5,7 @@
   width: 1200px;
   height: 600px;
   background-color: #ffffff;
+  box-shadow: 2px 2px 9px 3px #2c2a2a;
   margin: 20px auto;
   position: relative;
 }
@@ -115,15 +116,15 @@
 .tooltip-avatar::before {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   background-color: #fff;
 
   border-left: 2px solid;
   border-top: 2px solid;
   transform: rotate(-45deg);
   top: 17px;
-  left: -12px;
+  left: -10px;
 }
 .profile {
   display: flex;
@@ -334,8 +335,10 @@ a {
     padding: 10px;
   }
   .border-avatar::before {
-  content: "";
-  width: 130px;
-
-}
+    content: "";
+    width: 130px;
+  }
+  .about-me {
+    width: 400px;
+  }
 }
