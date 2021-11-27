@@ -1,38 +1,335 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+.countdown {
+  width: 1200px;
+  height: 600px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  position: relative;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.countdown-header {
+  height: 240px;
+  background-color: #0b98d0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.countdown-title {
+  font-size: 30px;
+  color: #ccd8dc;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+}
+.countdown-timer {
+  display: flex;
+  font-size: 80px;
+  color: white;
+  justify-content: center;
+  padding: 20px;
+}
+.days,
+.hours,
+.minutes,
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.twodots {
+  margin: -30px 20px;
+}
+.count {
+  font-family: "Montserrat", sans-serif;
+  font-size: 65px;
+}
+.desc {
+  font-size: 20px;
+  color: #ccd8dc;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.title {
+  color: #0c69d6;
+  text-align: center;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+}
+.border-avatar {
+  width: 200px;
+  height: 200px;
+  background-color: #ffd951;
+  border-radius: 50%;
+  border: 2px solid;
+  position: relative;
+}
+.border-avatar:hover {
+  box-shadow: 4px 1px 14px 5px #efde00;
+}
+.border-avatar::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid;
+}
+.img-avatar {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  object-fit: contain;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.tooltip-avatar {
+  position: absolute;
+  border: 2px solid black;
+  width: 100px;
+  height: 50px;
+  background-color: #fff;
+  right: 0;
+  top: 0;
+  transform: translateX(70%);
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.25s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tooltip-avatar::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+
+  border-left: 2px solid;
+  border-top: 2px solid;
+  transform: rotate(-45deg);
+  top: 17px;
+  left: -12px;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+.about-me {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-name {
+  border-radius: 20px;
+  width: 100px;
+  height: 20px;
+  padding: 5px;
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.contact {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.fb {
+  cursor: pointer;
+  display: flex;
+  width: 180px;
+  height: 50px;
+  background-color: #22c993;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px;
+}
+.github {
+  cursor: pointer;
+  display: flex;
+  width: 180px;
+  height: 50px;
+  background-color: #3a3742;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px;
+}
+.website {
+  cursor: pointer;
+  display: flex;
+  width: 180px;
+  height: 50px;
+  background-color: #c24a8a;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px;
+}
+.form-input {
+  margin: 20px;
+  height: 90px;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 14px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.form-title {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.label {
+  font-size: 15px;
+  margin: 10px;
+}
+.input {
+  margin: 10px;
+}
+input {
+  border: 1px solid red;
+}
+input:focus {
+  color: black;
+  outline: none;
+  border: 2px solid red;
+  transition: 0.25s ease-in;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 3, 3, 0.479);
+}
+.modal-container {
+  position: absolute;
+  width: 500px;
+  height: auto;
+  background-color: rgb(240, 240, 240);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  padding: 5px;
+  position: relative;
+}
+.header-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.modal-footer {
+  border-top: 2px solid #ccc;
+  display: flex;
+  justify-content: flex-end;
+}
+.close-btn {
+  border-radius: 20px;
+  width: 100px;
+  height: 20px;
+  padding: 5px;
+  border: 2px solid black;
+  background-color: #ff1212;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+}
+.modal-body {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.close-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: 2px solid black;
+  background-color: #ff1212;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+.x {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 768px) {
+  .countdown {
+    width: 600px;
   }
-  to {
-    transform: rotate(360deg);
+  .countdown-title {
+    font-size: 20px;
+  }
+  .countdown-timer {
+    font-size: 20px;
+  }
+  .twodots {
+    opacity: 0;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .form-input {
+    margin: 20px 0;
   }
 }
