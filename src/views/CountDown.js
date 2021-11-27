@@ -3,8 +3,8 @@ import notsmile from '../images/notsmile.png';
 import smile from '../images/smile.png';
 import { useState } from 'react';
 const CountDown = () => {
-//     var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();  
-    var countDownDate = new Date("Nov 27, 2021 09:55:00").getTime(); 
+    var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();  
+
     var runCountDown = setInterval(function() {  
       var now = new Date().getTime();
       var distance = countDownDate - now;
