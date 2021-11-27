@@ -331,5 +331,11 @@ a {
   }
   .form-input {
     margin: 20px 0;
+    padding: 10px;
   }
+  .border-avatar::before {
+  content: "";
+  width: 130px;
+
+}
 }
