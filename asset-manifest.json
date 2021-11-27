@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/countdown_newyear/static/css/main.7cd9a04e.chunk.css",
-    "main.js": "/countdown_newyear/static/js/main.774631c5.chunk.js",
-    "main.js.map": "/countdown_newyear/static/js/main.774631c5.chunk.js.map",
+    "main.css": "/countdown_newyear/static/css/main.876cf60f.chunk.css",
+    "main.js": "/countdown_newyear/static/js/main.de7a9081.chunk.js",
+    "main.js.map": "/countdown_newyear/static/js/main.de7a9081.chunk.js.map",
     "runtime-main.js": "/countdown_newyear/static/js/runtime-main.a84eed09.js",
     "runtime-main.js.map": "/countdown_newyear/static/js/runtime-main.a84eed09.js.map",
     "static/js/2.f33b4de9.chunk.js": "/countdown_newyear/static/js/2.f33b4de9.chunk.js",
     "static/js/2.f33b4de9.chunk.js.map": "/countdown_newyear/static/js/2.f33b4de9.chunk.js.map",
     "index.html": "/countdown_newyear/index.html",
-    "static/css/main.7cd9a04e.chunk.css.map": "/countdown_newyear/static/css/main.7cd9a04e.chunk.css.map",
+    "static/css/main.876cf60f.chunk.css.map": "/countdown_newyear/static/css/main.876cf60f.chunk.css.map",
     "static/js/2.f33b4de9.chunk.js.LICENSE.txt": "/countdown_newyear/static/js/2.f33b4de9.chunk.js.LICENSE.txt",
     "static/media/avatar.9cdfa11c.png": "/countdown_newyear/static/media/avatar.9cdfa11c.png",
     "static/media/logo.6ce24c58.svg": "/countdown_newyear/static/media/logo.6ce24c58.svg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.a84eed09.js",
     "static/js/2.f33b4de9.chunk.js",
-    "static/css/main.7cd9a04e.chunk.css",
-    "static/js/main.774631c5.chunk.js"
+    "static/css/main.876cf60f.chunk.css",
+    "static/js/main.de7a9081.chunk.js"
   ]
 }
